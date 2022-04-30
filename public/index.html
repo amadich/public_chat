@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h2 {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+        legend {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        input{
+            width: 80%;
+            border: 2px solid #222;
+            height: 50px;
+            padding-left: 10px;
+            font-family: cursive;
+            font-size: large;
+            background-color: whitesmoke;
+        }
+        button {
+            width: 100px;
+            height: 50px;
+            background-color: aquamarine;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>Hello World <span style="color: lightseagreen;">( Online Chating ) </span></h2>
+    </center> <hr>
+   
+        <fieldset>
+            <legend>Chating Online</legend>
+            <ul id="messages"></ul>
+        <form id="form" action="">
+            <input type="text" id="input" autocapitalize="off">
+            <button>Send</button>
+        </form>
+        </fieldset>
+           
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="./app.js"></script>
+
+</body>
+</html>
